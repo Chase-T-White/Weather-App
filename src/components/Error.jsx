@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default Error = () => {
+export default function Error() {
   return (
     <Article>
       <img src="https://imgur.com/HNpdON2.jpg" alt="Error butthole" />
@@ -11,7 +11,7 @@ export default Error = () => {
       </h2>
     </Article>
   );
-};
+}
 
 const Article = styled.article`
   height: 100%;
