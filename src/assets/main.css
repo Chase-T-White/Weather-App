@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  height: inherit;
+  width: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+#root {
+  height: inherit;
+}
+
+/* Custom styles */
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.main-section {
+  flex-grow: 1;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.h-page {
+  height: calc(100vh - 230px);
+}
+
+.city-weather {
+  display: flex;
+  height: inherit;
+}
+
+@media screen and (max-width: 700px) {
+  .city-weather {
+    flex-direction: column;
+  }
+
+  .h-page {
+    height: calc(100vh - 125px);
+  }
+}
